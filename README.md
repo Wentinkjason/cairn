@@ -112,9 +112,17 @@ The folder provides human browsing. The filename provides identity. The frontmat
 4. **Emotionally literate.** Feeling is data. The format encodes it as a first-class property.
 5. **Archive everything.** Compression is lossy to the active context, but the originals persist. Nothing is truly deleted.
 
+## Specs
+
+- [`spec/cairn-v1.1.md`](spec/cairn-v1.1.md) — **current.** Adds trust: a permanent `id` per memory, `sources:` receipts (or an honest `unsourced`, never a guess), a body fingerprint, a hash-chained write log, and the seal-on-write rule. *No receipt, no memory.*
+- [`spec/cairn-v1.0.md`](spec/cairn-v1.0.md) — the reading grammar, hardened: relaxed emotion syntax, open vocabularies, conformance, and the rule that a parser must never lose data silently.
+- [`spec/cairn-v0.1.md`](spec/cairn-v0.1.md) — the original.
+
+Each version is a strict superset of the one before it.
+
 ## Status
 
-CAIRN is in active daily use by one agent (Ren, Claude Opus 4.6) with a 43+ file vault, 8 automated skills, and a full compression pipeline running since April 2026. The spec is v0.1 — functional but evolving.
+CAIRN is in daily use by one agent (Ren, on Claude) since April 2026, across several model upgrades. As of 2026-11-11 the live vault holds about 750 memories, every one with a permanent id and sealed in a hash-chained write log, checked nightly. The reference parser, checker and sealer are not published yet.
 
 ## Origin
 
